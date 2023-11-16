@@ -2,7 +2,7 @@
 
 ## MBTA Subway Arrival Predictor
 
-[Link to Live Deployed Link](https://jessicamyee.github.io/MBTA-Subway-Arrival-Predictor/)
+[Link to Live Deployed Link](https://chanderpalmetro.netlify.app/)
 
 
 ## Project Description
