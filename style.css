@@ -1,0 +1,288 @@
+*{
+  margin: auto;
+  max-width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background-color: #666c68;
+}
+
+.top-banner {
+  background-image: url("./images/green-line.png");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: sepia(0.6) brightness(0.5);
+}
+
+#webapp-title {
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  letter-spacing: 5px;
+
+}
+
+
+.mid-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+p{
+  text-align: center; 
+}
+
+.prediction-area{  
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  margin: 30px 0px;
+  padding: 30px 0px;
+  max-width: 600px;
+  flex: 1;
+}
+
+#select-station{
+  margin: 30px;
+  font-size: 18px;
+}
+
+
+#submit-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 17px;
+  background-color: #056011;
+  border-radius: 10px;
+  color: #FFFFFF;
+  transition-duration: 0.3s;
+}
+
+#submit-button:hover{
+  background-color: #9ddaa5;
+  color: #000000;
+}
+
+#reset-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 10px;
+  background-color: #9c3c3d;
+  border-radius: 10px;
+  color: #FFFFFF;
+  transition-duration: 0.3s;
+  margin-top: 30px;
+}
+
+#reset-button:hover{
+  background-color: #da9da1;
+  color: #000000;
+}
+
+
+.prediction-results div{
+  margin: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f7f7e6;
+}
+
+img {
+  margin: 10px 0px;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.twitter-feed{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.resource-list{
+  padding: 35px;
+  background-color: #15551e ;
+}
+
+h2{
+  color:white;
+  margin: 0px 0px 50px;
+}
+
+.resource-button-set{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.resource-button-single{
+  display: flex;
+  background-color:#000000;
+  color:#FFFFFF;
+  border: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 15px;
+  transition-duration: 0.3s;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.resource-button-single:hover{
+  background-color: #F5F5DC;
+  color: #000000;
+}
+
+
+footer {
+  background-color: #020D02;
+  padding: 12px 40px;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #0077b5;
+  color: white;
+  margin: 10px 20px;
+  border-radius: 10px;
+}
+
+.fa-instagram {
+  background: rgb(242, 240, 240);
+  margin: 10px 20px;
+  border-radius: 10px;
+} 
+
+.fa-twitter-square {
+  background: #08a0e9;
+  margin: 10px 20px;
+  border-radius: 10px;
+} 
+
+
+
+
+@media screen and (max-width: 565px){
+
+  #webapp-title {
+    font-size: 30px;
+    top: 30%;
+  }
+
+
+  .mid-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .prediction-area{  
+    max-width: 96%;
+  }
+
+  #select-station{
+    max-width: 90%;
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 96%;
+  }
+
+  h2{
+    margin: 0px 0px 20px;
+    font-size: 20px;
+  }
+
+  .resource-button-single{
+    display: flex;
+    width: 100px;
+    height: 60px;
+    font-size: 13px;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fa {
+    padding: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 320px){
+
+  .top-banner {
+    min-width: 100%;
+  }
+
+  #webapp-title {
+    font-size: 25px;
+  }
+
+  .prediction-area{  
+    max-width: 90%;
+  }
+
+  #select-station{
+    max-width: 80%;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  h2{
+    margin: 0px 0px 10px;
+    font-size: 15px;
+  }
+
+  .resource-button-single{
+    display: flex;
+    width: 100px;
+    height: 60px;
+    font-size: 13px;
+    justify-content: space-between;
+  }
+
+  .fa {
+    padding: 10px;
+  }
+}
